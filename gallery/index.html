@@ -27,11 +27,11 @@
 
         <ul>
           <li><a href="/">Beranda</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/blog">Blog</a></li>
           <li>
-            <a href="/contact"><b>Contact</b></a>
+            <a href="/gallery"><b>Gallery</b></a>
           </li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
 
           <li>
             <button class="btn-toggle">
@@ -48,17 +48,19 @@
     </header>
 
     <main>
-      <div id="content-contact">
-        <h2>Contact Form</h2>
-        <form action="/submit_contact" method="post">
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" required /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br />
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message" required></textarea><br />
-          <input type="submit" value="Submit" />
-        </form>
+      <div id="content" style="text-align: center">
+        <div class="gallery-container">
+          <div class="photo-grid-container">
+            <section class="photo-grid">
+              <img src="../assets/img/1.jpeg" alt="STEVE WUATEN" />
+              <img src="../assets/img/2.jpeg" alt="STEVE WUATEN" />
+              <img src="../assets/img/3.jpeg" alt="STEVE WUATEN" />
+              <img src="../assets/img/4.jpeg" alt="STEVE WUATEN" />
+              <img src="../assets/img/5.jpeg" alt="STEVE WUATEN" />
+              <img src="../assets/img/6.jpeg" alt="STEVE WUATEN" />
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -70,6 +72,6 @@
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

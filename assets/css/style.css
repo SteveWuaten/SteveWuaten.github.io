@@ -270,6 +270,14 @@ body.dark-theme .card {
   color: #ddd;
 }
 
+body.dark-theme form {
+  background: #444;
+}
+
+body.dark-theme #list {
+  background: #444;
+}
+
 /* Light and Dark Mode Button */
 .btn-toggle {
   background-color: transparent;
@@ -315,7 +323,88 @@ body.dark-theme .btn-toggle:hover i {
   color: #fff;
 }
 
+/* Card */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1em;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Photo grid */
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-grid-container {
+  max-width: 100%;
+  overflow: auto;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: auto;
+}
+
 /* Responsive */
+
+@media screen and (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 901px) {
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   main {
@@ -351,5 +440,9 @@ body.dark-theme .btn-toggle:hover i {
   nav ul.active {
     padding: 25px;
     max-height: 100vh;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Steve Wuaten</title>
 
-    <link link rel="icon" type="image/x-icon" href="assets/icon/favicon.jpg" />
+    <link
+      link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icon/favicon.jpg"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -22,8 +27,10 @@
 
         <ul>
           <li><a href="/">Beranda</a></li>
-
-          <li><a href="/blog">Blog</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li>
+            <a href="/blog"><b>Blog</b></a>
+          </li>
           <li><a href="/contact">Contact</a></li>
 
           <li>
@@ -44,9 +51,32 @@
       <div id="content" style="text-align: center">
         <section id="list">
           <h2>Postingan Blog</h2>
-          <p>
-            <a href="/blog/kota-manado.html">Kota Manado</a>
-          </p>
+          <div class="cards-container">
+            <div class="card">
+              <h3 class="card-title">
+                <a href="/blog/kota-manado.html">Kota Manado</a>
+              </h3>
+              <p class="card-description">
+                Kota yang berada di Sulawesi Utara.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">
+                <a href="/blog/apa-itu-database.html">Apa itu Database?</a>
+              </h3>
+              <p class="card-description">
+                Database memudahkan dalam mencari informasi.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">
+                <a href="/blog/mobile-legends.html">Mobile Legends</a>
+              </h3>
+              <p class="card-description">Game MOBA buatan Moonton.</p>
+            </div>
+          </div>
         </section>
       </div>
     </main>
